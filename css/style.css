@@ -36,6 +36,12 @@ img {
   height: auto;
 }
 
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 button {
   cursor: pointer;
 }
@@ -76,6 +82,7 @@ button {
 }
 
 .hd-page a {
+  padding-top: 32px;
   padding-bottom: 32px;  
 
   font-weight: 500;
@@ -85,9 +92,7 @@ button {
 
   color: var(--title-grey);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hd-page a:hover,
@@ -115,7 +120,7 @@ button {
 }
 
 .header-contacts a {
-  display: flex;
+  display: block;
 
   color: var(--text-grey);
 
@@ -218,9 +223,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -315,12 +318,6 @@ button {
   height: 294px;
 }
 
-.img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
 .specialty-list h3 {
   position: absolute;
   bottom: 0;
@@ -355,9 +352,10 @@ button {
   align-items: center;
   justify-content: center;
 
-  transition-property: color, background-color, border-radius, outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),  
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team.social-links a {
@@ -391,7 +389,9 @@ button {
   flex-basis: calc(100% / 4 - 30px);
 
   background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -432,9 +432,9 @@ button {
   align-items: center;
   justify-content: center;
 
-  transition-property: color, outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .customers-list a:hover, 
@@ -484,9 +484,7 @@ button {
 
   color: var(--text-white6);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts a:hover,
@@ -533,9 +531,9 @@ button {
 
   outline: none;
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filt-btn {
@@ -550,7 +548,9 @@ button {
 .portfolio-filter button:focus {
   background-color: var(--main-blue);
   color: var(--white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -563,14 +563,15 @@ button {
 .portfolio-list a {
   display: block;
 
-  transition-property: box-shadow, outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list a:hover,
 .portfolio-list a:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
 }
 
@@ -618,6 +619,7 @@ button {
 .portfolio-hover-text {
   position: absolute;
   top: 0;
+  opacity: 0;
   
   margin: 0;
   padding: 63px 24px;
@@ -632,9 +634,7 @@ button {
 .portfolio-hover-text {
   
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .portfolio-thumb::before,
@@ -654,26 +654,38 @@ button {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  /* visibility: hidden; */
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal { 
+  transform: translate(-50%, -50%) scale(0.1);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
+    
   width: 528px;
   min-height: 528px;
   
   background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal button {
