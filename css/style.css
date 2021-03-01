@@ -120,8 +120,8 @@ button {
 }
 
 .header-contacts a {
-  display: block;
-
+  display: flex;
+   
   color: var(--text-grey);
 
   font-weight: 500;
@@ -360,6 +360,7 @@ button {
 
 .team.social-links a {
   color: #AFB1B8;
+  border-radius: 50%;
 }
 
 .join.social-links a {
@@ -372,7 +373,6 @@ button {
 .social-links a:focus {
   color: var(--white);
   background-color: var(--main-blue);
-  border-radius: 50%;
   outline: none;
 }
 
